@@ -20,9 +20,9 @@ header('Access-Control-Allow-Origin: *');
         <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
         <link rel="stylesheet" type="text/css" href="css/animate.css" />
        
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="bower_components/jquery/jquery.min.js"><\/script>')</script>
-        <script src="https://cdn.rawgit.com/nnattawat/flip/v1.0.18/dist/jquery.flip.min.js"></script>
+        <script src="js/jquery-2.1.4.min"></script>
+        <script src="js/jquery.bgswitcher.js"></script>
+        <script src="js/jquery.flip.min.js"></script>
         <script src="js/jquery.fullPage.min.js"></script>
         <script src="js/jquery.bgswitcher.js"></script>
     </head>
