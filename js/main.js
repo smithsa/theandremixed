@@ -108,8 +108,8 @@
             $(".card").flip({axis: 'x'});
            
             $("#play-again").on("click", function(){
-                location.reload();
                 window.location.replace(hostsite+"#players");
+                location.reload();
 
             });
 
