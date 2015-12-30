@@ -1174,13 +1174,15 @@ class REST_CRUD_API {
 
 }
 
+$configs = include('config.php');
+
 // uncomment the lines below when running in stand-alone mode:
 
 $api = new MySQL_CRUD_API(array(
-	'hostname'=>'mysql1.000webhost.com',
-	'username'=>'a5091960_theand',
-	'password'=>'password',
-	'database'=>'a5091960_theand',
+	'hostname'=> $configs['hostname'],
+	'username'=> $configs['username'],
+	'password'=> $configs['password'],
+	'database'=> $configs['database'],
 	'charset'=>'utf8'
 ));
 $api->executeCommand();
