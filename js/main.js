@@ -1,7 +1,7 @@
        $(function() {
             var number_of_questions_to_ask = 12;
             //when changing the number of slides add the equal amount of divs to the page
-            var hostsite = "http://theand.site88.net/";
+            var hostsite = "https://polar-cliffs-2133.herokuapp.com/";
             
             $("#number-of-questions").text(number_of_questions_to_ask);
 

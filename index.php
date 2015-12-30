@@ -20,7 +20,7 @@ header('Access-Control-Allow-Origin: *');
         <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
         <link rel="stylesheet" type="text/css" href="css/animate.css" />
        
-        <script src="js/jquery-2.1.4.min"></script>
+        <script src="js/jquery-2.1.4.min.js"></script>
         <script src="js/jquery.bgswitcher.js"></script>
         <script src="js/jquery.flip.min.js"></script>
         <script src="js/jquery.fullPage.min.js"></script>
