@@ -1174,15 +1174,13 @@ class REST_CRUD_API {
 
 }
 
-$configs = include('config.php');
-
 // uncomment the lines below when running in stand-alone mode:
 
 $api = new MySQL_CRUD_API(array(
-	'hostname'=> $configs['hostname'],
-	'username'=> $configs['username'],
-	'password'=> $configs['password'],
-	'database'=> $configs['database'],
+	'hostname'=> getenv('DB_HOSTNAME'),
+	'username'=> getenv('DB_USERNAME'),
+	'password'=> getenv('DB_PASSWORD'),
+	'database'=> getenv('DB_DATABASENAME'),
 	'charset'=>'utf8'
 ));
 $api->executeCommand();
