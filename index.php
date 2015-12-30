@@ -46,7 +46,7 @@ header('Access-Control-Allow-Origin: *');
                    <div class="slide"> <p class="white game-direction">Continue back and forth <br/>through all <span id="number-of-questions"></span> questions.</p></div>
                    <div class="slide"> <p class="white game-direction">Every question must be asked but you do not have to answer them. To earn the right to remain silent you must look the other person in the eye for 10 seconds before saying "pass."</p></div>
                    <div class="slide"> <p class="white game-direction"  id="countdown-slide">
-                        <span id="countdown-instructions">Take 30 seconds to relax and look at one another. Begin after the bell rings.</span><br/><br/>
+                        <span id="countdown-instructions">Take 30 seconds to relax and look at one another. Begin after the bell rings or the screen flashes.</span><br/><br/>
                         <a href="javascript:void(0)" id="start-timer" class="action-link">Start Timer</a>
                     </p></div>
                 
@@ -174,14 +174,14 @@ header('Access-Control-Allow-Origin: *');
                 </div> <!-- 12 -->
                 <div class="slide">
                     <h2 class="white game-over">Game Over <br/>
-                        <a href="#lastpage" data-menuanchor="lastpage" class="action-link">Credits</a> 
+                        <a href="#credits" data-menuanchor="credits" class="action-link">Credits</a>
                         <a href="javascript:void()" id="play-again" class="action-link">Play Again</a>
                     </h2>    
                 </div>   
             </div>
             <div class="section" id="section4">
                 <h2 class="white">Credits</h2>
-                <p class="white">This game was inspired by the creators<br> of the interactive documentary, "The { } And".<br/>Visit the 
+                <p class="white credits-text">This game was inspired by the creators<br> of the interactive documentary, "The { } And".<br/>Visit the
                     <a href="http://theand.us/" class="credit-link">theand.us</a> for more information.</p>
             </div>    
         </div>

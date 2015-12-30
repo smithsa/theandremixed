@@ -2,7 +2,8 @@
             var number_of_questions_to_ask = 12;
             //when changing the number of slides add the equal amount of divs to the page
             var hostsite = "https://polar-cliffs-2133.herokuapp.com/";
-            
+            //var hostsite = "http://localhost:8888/";
+
             $("#number-of-questions").text(number_of_questions_to_ask);
 
             $.ajax({
@@ -29,7 +30,7 @@
                             var unfilted_questions = response["question"]["records"];
                             var list_of_questions = [];
                             var shuffled_array = shuffle(unfilted_questions);
-                            console.log(shuffled_array);
+                            //console.log(shuffled_array);
                             for(var i = 0; i < number_of_questions_to_ask; i++){
                                 list_of_questions.push( [shuffled_array[i][2], shuffled_array[i][1] ]);
                             }
@@ -59,17 +60,17 @@
                       dataType: "json",
                       crossDomain : true,
                       success: function(response){
-                            var num_questions = response["question"]["records"].length
+                            var num_questions = response["question"]["records"].length;
                             var unfilted_questions = response["question"]["records"];
                             var list_of_questions = [];
                             var shuffled_array = shuffle(unfilted_questions);
-                            console.log(shuffled_array);
+                            //console.log(shuffled_array);
                             for(var i = 0; i < number_of_questions_to_ask; i++){
                                 list_of_questions.push( [shuffled_array[i][2], shuffled_array[i][1] ]);
                             }
 
                             list_of_questions.sort(sortFunction);
-                            console.log(list_of_questions);
+                            //console.log(list_of_questions);
                             for(var j =0; j < list_of_questions.length; j++){
                                 var slider_container = $('<div/>').attr({ class: 'slide fp-slide fp-table'});
                                 var fp_container = $('<div/>').attr({ class: 'fp-tableCell'});
@@ -107,7 +108,9 @@
             $(".card").flip({axis: 'x'});
            
             $("#play-again").on("click", function(){
+                location.reload();
                 window.location.replace(hostsite+"#players");
+
             });
 
             function shuffle(array) {
@@ -147,7 +150,7 @@
                         }).fadeIn();  
                         var audio = new Audio('sound/ding.mp3');
                         audio.play();
-                        for(i=0;i<16;i++) {$("#section2").fadeTo('slow', 0.5).fadeTo('slow', 1.0);}   
+                        for(var i=0;i<16;i++) {$("#section2").fadeTo('slow', 0.5).fadeTo('slow', 1.0);}
                         return;
                     }
                 }
