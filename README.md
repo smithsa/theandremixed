@@ -5,7 +5,9 @@ A 2 player turn based question game inspired from {The And} project. Players are
 ## Installation
 
 1. Configure database by providing values in *theandremixed/api/api.php* on line 1179
+
 *request schema and data*
+
 ```
 	$api = new MySQL_CRUD_API(array(
 		'hostname'=> getenv('DB_HOSTNAME'),
