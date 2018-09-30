@@ -24,7 +24,7 @@ git clone git@github.com:smithsa/theandremixed.git
 3. Move the contents of the folder *theandremixed* to a server
 
 ## Usage
-![the and remix usage](https://user-images.githubusercontent.com/1827606/46258770-95f78d00-c495-11e8-80b8-7916ee763758.gif)
+<img src="https://user-images.githubusercontent.com/1827606/46258770-95f78d00-c495-11e8-80b8-7916ee763758.gif" alt="the and remix usage walkthrough" width="60%">
 
 ## Built With
 *	SQL
